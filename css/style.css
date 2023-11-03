@@ -8,9 +8,23 @@
 
 }
 
-/* Nav styles */
+/* ----- Global styles */
+.page-section {
+    padding: 2rem;
+}
+
+
+/* ----- Navigation ----- */
 
 #nav-logo {
     width: 120px;
     height: auto;
+}
+
+
+/* ----- About me section ----- */
+/* Card styles */
+.card-headshot {
+    height: 300px;
+    width: 300px;
 }

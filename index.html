@@ -24,12 +24,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#about-me">About Me <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact-me">Contact Me</a>
@@ -56,40 +59,78 @@
 <body>
     <!-- About me section -->
     <section class="page-section about-me" id="about-me">
-        <h2>About Me</h2>
-        <div>
-
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="row">
+        <div class="col-md-6 d-flex flex-row">
+            <div class="card" style="width: 100%; border: none;">
+              <div class="d-flex justify-content-center">
+                <img src="./images/custom_headshot.png" class="card-headshot" alt="...">
+              </div>
+                <div class="card-body">
+                  <h4>Lorem Ipsum</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
         </div>
-
-    </section>
+        <div class="col-md-12 col-lg-6 d-flex flex-row">
+            <div class="card" style="width: 100%; border: none;">
+              <div class="card-body">
+                <h3>Background</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  </section>
     
     <!-- Project portfolio section -->
     <section class="page-section portfolio" id="portfolio">
+      <div class="container">
         <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex flex-row">
+                <div class="card">
+                    <img src="./images/02-portfolio-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, iure?</p>
+                        <a href="#" class="btn btn-primary ">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row">
+                <div class="card">
+                    <img src="./images/02-portfolio-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <div class="mt-auto">
+                          <a href="#" class="btn btn-primary ">View</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row">
+                <div class="card">
+                    <img src="./images/02-portfolio-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laboriosam blanditiis culpa.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+
+    <!-- Skills section -->
+    <section class="page-section skills" id="skills">
+        <h2>Skills</h2>
         <div>
-            <div class="card" style="width: 18rem;">
-                <div class="row">
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
         </div>
 
