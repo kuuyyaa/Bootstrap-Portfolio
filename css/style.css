@@ -5,12 +5,27 @@
 }
 
 :root {
+    --primary-bg-color: #07868a;
+    --secondary-bg-color: #080741;
 
 }
 
 /* ----- Global styles ----- */
 .page-section {
     padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.card {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h2{
+    font-size: 38px;
+    padding-bottom: 2rem;
 }
 
 
@@ -25,6 +40,58 @@
 /* ----- About me section ----- */
 /* Card styles */
 .card-headshot {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 125px;
+    margin: 3rem;
+}
+
+.headshot-body {
+    color: white;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.about-me-card {
+    background: linear-gradient(to bottom right, var(--primary-bg-color), var(--secondary-bg-color));
+    border-radius: 35px;
+}
+
+.background-card {
+    border-radius: 35px;
+    box-shadow: none;
+}
+
+/* ----- Hero ----- */
+.jumbotron {
+    background: 
+    /* url(../images/background-art.png), */
+    linear-gradient(to bottom right, var(--primary-bg-color), var(--secondary-bg-color));
+    background-position: center center;
+    color: white;
+    /* opacity: 0.8; */
+}
+
+.jumbotron-body {
+    padding: 6rem;
+}
+
+
+/* ----- Projects ----- */
+.portfolio-item {
+    border-radius: 25px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.025);
+    transition-duration: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    /* Global styles */
+    .page-section {
+        padding: 0.5rem;
+    }
 }
