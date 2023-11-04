@@ -8,6 +8,9 @@
     --primary-bg-color: #07868a;
     --secondary-bg-color: #080741;
 
+    --glass-top: rgba(255,255,255,0);
+    --glass-bottom: rgba(255,255,255,0.1)
+
 }
 
 /* ----- Global styles ----- */
@@ -29,7 +32,7 @@ h1 {
 }
 
 .container h2 {
-    font-size: 38px;
+    font-size: 36px;
     padding-bottom: 8px;
 }
 
@@ -43,35 +46,7 @@ hr {
     opacity: 0.2;
 }
 
- .btn-primary {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(0, 0, 0, 0);
-    width: fit-content;
-    border-radius: 10px;
-    
-}
-
-.btn-primary:hover {
-    background-color: white;
-    color: #B53471;
-    opacity: 1;
-    transition-duration: 0.3s;
-    border-color: white;
-}  
-
-.btn-lg {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: black;
-    width: 150px;
-    border-radius: 25px;
-    border-color: black;
-} 
-
-.btn-lg:hover {
-    transform: opacity(1);
-    /* opacity: 1; */
-    transition-duration: 0.3s;
-}
+ 
 
 
 /* ----- Navigation ----- */
@@ -125,10 +100,24 @@ hr {
     padding-right: 6rem;
 }
 
+.btn-lg {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    width: 150px;
+    border-radius: 25px;
+    ;
+} 
+
+.btn-lg:hover {
+    background-color: white;
+    color: var(--secondary-bg-color);
+    transition: background-color 0.3s ease-out;
+}
+
 
 /* ----- Projects ----- */
 .portfolio {
-    background: linear-gradient(to bottom, #3d1550, #B53471);
+    background: linear-gradient(to bottom, #3d1550, #924576);
 }
 
 .portfolio h2 {
@@ -143,18 +132,52 @@ hr {
     border-radius: 25px;
     overflow: hidden;
     border: none;
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background: linear-gradient(to bottom right, var(--glass-bottom),var(--glass-bottom));
     color: white;
+}
+
+.row {
+    padding-bottom: 1rem;
 }
 
 .portfolio-item:hover {
     transform: scale(1.025);
-    transition-duration: 0.3s;
+    transition: transform 0.3s ease-out;
+}
+
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0);
+    width: fit-content;
+    border-radius: 20px;
+    
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #B53471;
+    border-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease-out;
+} 
+
+/* ----- Skills ----- */
+.page-section.skills {
+    background: url(../images/background-art-01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-height: fit-content;
+    background-position: center;
+}
+
+.skill-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 35px;
 }
 
 /* ----- Contact me ----- */
 .contact-me {
-    background: linear-gradient(to bottom left, #B53471, var(--primary-bg-color));
+    background: linear-gradient(to bottom right, #416a82, #416a82);
 }
 
 .contact-me {
@@ -181,5 +204,11 @@ hr {
     }
     .jumbotron-body {
         padding: 2rem;
+    }
+    .page-section.skills {
+        background-size: cover;
+    }
+    .skill-card {
+        background-color: rgba(255, 255, 255, 0.8);
     }
 }
