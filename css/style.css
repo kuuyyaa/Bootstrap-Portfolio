@@ -13,6 +13,7 @@
 /* ----- Global styles ----- */
 .page-section {
     padding: 2rem;
+    padding-bottom: 4rem;
 }
 
 h1 {
@@ -23,9 +24,53 @@ h1 {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
-.container h2{
+.container h3 {
+    padding-bottom: 1rem;
+}
+
+.container h2 {
     font-size: 38px;
-    padding-bottom: 2rem;
+    padding-bottom: 8px;
+}
+
+hr {
+    padding-bottom: 8px;
+}
+
+.inv-hr {
+    border-color: white;
+    border-width: 1px;
+    opacity: 0.2;
+}
+
+ .btn-primary {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0);
+    width: fit-content;
+    border-radius: 10px;
+    
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #B53471;
+    opacity: 1;
+    transition-duration: 0.3s;
+    border-color: white;
+}  
+
+.btn-lg {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    width: 150px;
+    border-radius: 25px;
+    border-color: black;
+} 
+
+.btn-lg:hover {
+    transform: opacity(1);
+    /* opacity: 1; */
+    transition-duration: 0.3s;
 }
 
 
@@ -54,7 +99,7 @@ h1 {
 }
 
 .about-me-card {
-    background: linear-gradient(to bottom right, var(--primary-bg-color), var(--secondary-bg-color));
+    background: linear-gradient(to bottom, var(--primary-bg-color), #3d1550);
     border-radius: 35px;
 }
 
@@ -67,20 +112,39 @@ h1 {
 .jumbotron {
     background: 
     /* url(../images/background-art.png), */
-    linear-gradient(to bottom right, var(--primary-bg-color), var(--secondary-bg-color));
+    linear-gradient(to right, var(--primary-bg-color), var(--secondary-bg-color));
     background-position: center center;
     color: white;
     /* opacity: 0.8; */
 }
 
+
 .jumbotron-body {
-    padding: 6rem;
+    padding: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 
 /* ----- Projects ----- */
+.portfolio {
+    background: linear-gradient(to bottom, #3d1550, #B53471);
+}
+
+.portfolio h2 {
+    color: white;
+}
+
+.portfolio hr {
+    color: white;
+}
+
 .portfolio-item {
     border-radius: 25px;
+    overflow: hidden;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
 .portfolio-item:hover {
@@ -88,10 +152,34 @@ h1 {
     transition-duration: 0.3s;
 }
 
+/* ----- Contact me ----- */
+.contact-me {
+    background: linear-gradient(to bottom left, #B53471, var(--primary-bg-color));
+}
+
+.contact-me {
+    color: white;
+}
+
 
 @media (max-width: 768px) {
     /* Global styles */
     .page-section {
         padding: 0.5rem;
+    }
+    .card-headshot {
+        width: 200px;
+        height: 200px;
+    }
+    .container h2 {
+        padding-top: 1.5rem;
+    }
+    .flex-row {
+        padding: 3.25rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .jumbotron-body {
+        padding: 2rem;
     }
 }
