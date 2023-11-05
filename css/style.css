@@ -85,13 +85,10 @@ hr {
 /* ----- Hero ----- */
 .jumbotron {
     background: 
-    /* url(../images/background-art.png), */
     linear-gradient(to right, var(--primary-bg-color), var(--secondary-bg-color));
     background-position: center center;
     color: white;
-    /* opacity: 0.8; */
 }
-
 
 .jumbotron-body {
     padding: 2rem;
