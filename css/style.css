@@ -33,7 +33,6 @@ h1 {
 
 .container h2 {
     font-size: 36px;
-    padding-bottom: 8px;
 }
 
 hr {
@@ -132,9 +131,12 @@ hr {
     border-radius: 25px;
     overflow: hidden;
     border: none;
-    /* background-color: rgba(255, 255, 255, 0.1); */
     background: linear-gradient(to bottom right, var(--glass-bottom),var(--glass-bottom));
     color: white;
+}
+
+.card-img-large {
+    height: ;
 }
 
 .row {
@@ -184,6 +186,28 @@ hr {
     color: white;
 }
 
+.social-icons-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons-row a {
+    padding: 20px;
+}
+
+.contact-animation {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-animation img{
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+}
+
+
 
 @media (max-width: 768px) {
     /* Global styles */
@@ -210,5 +234,13 @@ hr {
     }
     .skill-card {
         background-color: rgba(255, 255, 255, 0.8);
+    }
+    .social-icons-row {
+        display: flex;
+        flex-direction: column;
+        justify-content;
+    }
+    .social-icons-row h2 {
+        padding-bottom: 3rem;
     }
 }
